@@ -37,5 +37,5 @@ for n = 1 : N
     end        
 end
 
-accurate = 1-accurate/N;
-err = [sum(MAP_err, 2) sum(ML_err, 2)];
+experimental = 1-accurate/N;
+theoretical = [sum(MAP_err, 2) sum(ML_err, 2)];

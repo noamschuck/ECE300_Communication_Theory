@@ -21,10 +21,10 @@ Eb_32 = 1/5 * (1/32 * sum(abs(QAM_32).^2))
 %% Part C
 N = 2;
 
-n_4 = 2/N;
-n_8 = 3/N;
-n_16 = 4/N;
-n_32 = 5/N;
+n_4 = 2/N
+n_8 = 3/N
+n_16 = 4/N
+n_32 = 5/N
 
 %% Part D
 % 4-PSK is the most power efficient because the points are closer
