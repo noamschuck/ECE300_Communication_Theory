@@ -1,0 +1,3 @@
+ML is the same in all cases. The reason for this is because the probability of which ball you pick the first time has no effect on the decision made, and the way we make the decision is just either add one to r2 before dividing by the total, or dont, and the entry where we add one before dividing will always be bigger.
+
+So red will always be chosen if the second urn yeilded a red, and if the second urn yeilded a blue, blue will be decided as the outcome of the first urn.
