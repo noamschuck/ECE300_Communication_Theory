@@ -60,7 +60,7 @@ threshold = double(sol(1));
 n = 1e7;
 sigma = [10; 10; 10] .^ [0; -1/10; 1/10]; 
 p = exp(-threshold^2*ones(size(sigma))/2./sigma);
-R =  sqrt(sigma/2) .* abs(randn(3,n) + 1j*randn(3,n));
+R =  sqrt(sigma) .* abs(randn(3,n) + 1j*randn(3,n));
 
 percent = sum(R > threshold, 2)/length(R);
 
@@ -70,6 +70,6 @@ for i = 1:3
     yline(threshold, "-r", "Threshold", 'LineWidth', 3);
     title("R with sigma^2 = " + sigma(i));
 
-    fprintf("Fraction above threshold for sigma^2 = %f: %f < %f\n", sigma(i), percent(i), p(i));
+    fprintf("Fraction above threshold for sigma^2 = %f: %f ≈ %f\n", sigma(i), percent(i), p(i));
 
 end
